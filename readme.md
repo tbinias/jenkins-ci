@@ -1,0 +1,4 @@
+- install ansible on your workstation
+- run ansible-galaxy install -r requirements.yml
+- run vagrant up
+- jenkins should be reachable under http://192.168.56.20:8080

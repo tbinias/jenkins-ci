@@ -1,0 +1,12 @@
+- hosts: all
+  gather_facts: yes
+
+  roles:
+    - geerlingguy.jenkins
+    - geerlingguy.git
+    - franklinkim.docker
+    - franklinkim.docker-compose
+
+  tasks:
+    - include: tasks/jenkins-docker.yml
+    - include: tasks/jenkins-java-options.yml

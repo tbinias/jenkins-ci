@@ -1,0 +1,5 @@
+- name: setup jenkins java-options
+  lineinfile: dest=/etc/default/jenkins 
+              regexp='^JAVA_ARGS='
+              line='JAVA_ARGS="-Djava.awt.headless=true -Dhudson.model.DirectoryBrowserSupport.CSP="'
+              state=present
